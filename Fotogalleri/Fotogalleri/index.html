@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DronePicturesSweden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="gallery.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <a href="index.html">
+        <img src="Logo.png" id="logo">
+      </a>
+
+      <input type="checkbox" id="toggle">
+      <nav>
+        <label class="navbar-toggler" for="toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="navbar-toggler" for="toggle">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="#heading2">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="banner">
+      <h1 id="heading1">A unique perspective</h1>
+    </section>
+
+    <section id="about">
+      <h2 id="heading2">About</h2>
+      <p id="aboutText">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <div id="gallery" class="gallery">
+      <img src="Picture1.jpg" alt="Image 1">
+      <img src="Picture2.jpg" alt="Image 2">
+      <img src="Picture3.jpg" alt="Image 2">
+      <img src="Picture4.jpg" alt="Image 2">
+      <img src="Picture5.jpg" alt="Image 2">
+      <img src="Picture6.jpg" alt="Image 2">
+      <img src="Picture7.jpg" alt="Image 2">
+      <img src="Picture8.jpg" alt="Image 2">
+      <img src="Picture9.jpg" alt="Image 2">
+      <img src="Picture10.jpg" alt="Image 2">
+    </div>
+
+    <div id="modal" onclick="closeModal()">
+      <span id="close-modal">&times;</span>
+      <img id="modal-image" src="" alt="Modal Image">
+    </div>
+
+    <footer id="footer">
+    </footer>
+  </div>
+
+  <!--
+  <script>
+    const toggle = document.getElementById('toggle');
+    const navList = document.querySelector('.nav-list');
+  
+    toggle.addEventListener('change', () => {
+      navList.style.display = toggle.checked ? 'block' : 'none';
+    });
+  
+    const scrollToSection = (sectionId) => document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    const closeMenu = () => navList.style.display = 'none';
+  
+    document.querySelectorAll('.nav-item a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        scrollToSection(link.hash.substring(1));
+        closeMenu();
+      });
+    });
+  
+    document.addEventListener('click', (e) => { if (!e.target.closest('nav, .navbar-toggler')) closeMenu(); });
+  </script>
+-->
+</body>
